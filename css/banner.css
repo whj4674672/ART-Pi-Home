@@ -10,9 +10,12 @@
     li {
         list-style: none;
     }
-    
+
+    .containermargin {
+        padding: 50px 0;
+    }
     .top {
-        /* background:rgba(0,0,0,.2); */
+        background:rgba(0,0,0,.8);
         padding: 0 8%;
         height: 78px;
         position: fixed;
@@ -48,6 +51,17 @@
     .top .topNav li a {
         color: #fff;
         font-size: 18px;
+    }
+
+    .product-title{
+        text-align:center;
+    }
+    .product-title h2{
+        font-size:28px;
+    }
+    .product-title p{
+        font-size:18px;
+        padding:30px 0;
     }
     
     .talentBanner {}
@@ -398,7 +412,57 @@
         background: rgba(204, 205, 208, .2) url(../images/banner_right.png) center center no-repeat;
         right: 20px;
     }
-    
+    .case .case-img{
+        margin-bottom:30px;
+    }
+    .case .case-img img{
+        width:100%;
+        max-height:600px;
+    }
+    .course .course-img{
+        text-align:center;
+    }
+    .course .course-img img{
+        max-height:260px;
+    }
+    .course .course-list li {
+        font-size:18px;
+        margin-bottom:20px;
+    }
+    .team .team-img{
+        text-align:center;
+        padding-left:200px;
+    }
+    .team .team-img img{
+        width:200px;
+        height:200px;
+    }
+    .team .team-list{
+        font-size:18px;
+        padding-top:80px;
+    }
+    .bottom{
+        font-size:18px;
+        background:rgba(0,0,0,0.8);
+        color:#fff;
+        padding:10px 0;
+    }
+    .bottom a{
+        color: #fff;
+    }
+    .bottom .bottom-title{
+        margin-bottom:10px;
+    }
+    .bottom .bottom-img {
+        padding-left:50px;
+    }
+    .bottom .bottom-img img{
+        width:200px;
+        height:200px;
+    }
+    .bottom .bottom-desc{
+        max-width:400px;
+    }
     @media (min-width:1600px) and (max-width: 1800px) {
         .talentBanner .item-left .item-describe {
             width: 90%;
@@ -728,9 +792,7 @@
         background: url("../images/bg2.png");
     }
     
-    .containermargin {
-        margin: 5%;
-    }
+   
     
     .nav>li>a:focus,
     .nav>li>a:hover {
