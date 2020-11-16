@@ -1,13 +1,400 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta charset="UTF-8">
-  <title>ART-Pi Home</title>
-  <link rel="icon" href="docs/_media/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ART-Pi</title>
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/zui.min.css">
+    <link rel="stylesheet" href="./css/banner.css">
+
+    <style>
+        .box {
+            width: 60%;
+            /* border: 1px solid red; */
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .box>p {
+            font-size: 18px;
+        }
+
+        .box1 {
+            width: 60%;
+            border: 1px solid red;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-left>ul>p {
+            font-size: 30px;
+            margin-left: 40px;
+        }
+
+        .float-left>ul>li {
+            font-size: 17px;
+            margin-left: 50px;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .float-right>ul>p {
+            font-size: 30px;
+            margin-right: 100px;
+        }
+
+        .float-right>ul>li {
+            font-size: 17px;
+            margin-right: 90px;
+        }
+
+        .float-top {
+            float: top;
+        }
+
+        .item {
+            float: left;
+            height: 60px;
+        }
+
+        .item~p {
+            line-height: 60px
+        }
+
+        .Tbox {
+            /* width: 600px; */
+            margin: 10px;
+        }
+
+        .Tbox>ul>li {
+            float: left;
+            list-style: none;
+            margin: 0 auto;
+            margin-left: 10px;
+            line-height: 260px;
+        }
+    </style>
 </head>
+
 <body>
-<a href="docs/">docs</a>
+
+    <div class="top">
+        <div class="row">
+            <div class="logo ">
+                <img src="./images/0-1.png" alt="">
+            </div>
+            <div class="topNav ">
+                <nav class="navbar navbar-dark" role="navigation">
+                    <div class="container-fluid">
+                        <!-- 导航头部 -->
+                        <div class="navbar-header">
+                            <!-- 移动设备上的导航切换按钮 -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse-example">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- 品牌名称或logo -->
+                        </div>
+                        <!-- 导航项目 -->
+                        <div class="collapse navbar-collapse navbar-collapse-example">
+                            <!-- 一般导航项目 -->
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a
+                                        href="./docs">文档中心</a>
+                                <li><a href="your/nice/url">精彩展示</a></li>
+                                </li>
+                                <li><a href="https://club.rt-thread.org/ask/tag/1132.html">交流论坛</a></li>
+                                <li><a
+                                        href="https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi/blob/master/documents/UM5005-RT-Thread%20ART-Pi%20%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94.md">常见问题</a>
+                                </li>
+                                <li><a
+                                        href="https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi/blob/master/documents/UM5004-RT-Thread%20ART-Pi%20%E4%BB%A3%E7%A0%81%E8%B4%A1%E7%8C%AE%E6%89%8B%E5%86%8C.md">参与项目</a>
+                                </li>
+                                <li><a href="https://m.tb.cn/h.4ZFiklZ?sm=f83b6bX">购买链接</a></li>
+                            </ul>
+                        </div>
+                        <!-- END .navbar-collapse -->
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner  START -->
+    <div class="talentBanner">
+        <div class="wrapper">
+            <div class="talentBanner-show">
+                <ul class="slider">
+                    <li class="slider-item  talentBanneritem1">
+                        <div class="row item-row">
+                            <div class="col-md-5 item-right  fadeInRight current">
+                                <div class="item-img "> <img src="./images/pro1.png" alt=""></div>
+                            </div>
+                            <div class="col-md-7 item-left  fadeInDown animated" style="animation-delay:0.5s">
+                                <div class="item-content">
+                                    <h2 class="item-title">
+                                        <span>ART-Pi 应势而生</span>
+                                        <div class="item-line"></div>
+                                    </h2>
+                                    <p class="item-tip maxwidth-500">ART-Pi 是 RT-Thread
+                                        团队经过半年的精心准备，专门为嵌入式软件工程师、开源创客设计的一款极具扩展功能的 DIY 开源硬件。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider-item  talentBanneritem2">
+                        <div class="row item-row">
+                            <div class="col-md-5 item-right  fadeInRight current">
+                                <div class="item-img "> <img src="./images/pro2.png" alt=""></div>
+                            </div>
+                            <div class="col-md-7 item-left  fadeInDown animated" style="animation-delay:0.5s">
+                                <div class="item-content">
+                                    <h2 class="item-title">
+                                        <span>ART-Pi 工业扩展板</span>
+                                        <div class="item-line"></div>
+                                    </h2>
+                                    <p class="item-tip maxwidth-500">ART-Pi 工业扩展板支持工业控制领域常用的接口协议，助力工控领域的开发与应用。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider-item  talentBanneritem2">
+                        <div class="row item-row">
+                            <div class="col-md-5 item-right  fadeInRight current">
+                                <div class="item-img "> <img src="./images/pro3.png" alt=""></div>
+                            </div>
+                            <div class="col-md-7 item-left  fadeInDown animated" style="animation-delay:0.5s">
+                                <div class="item-content">
+                                    <h2 class="item-title">
+                                        <span>ART-Pi 多媒体扩展板</span>
+                                        <div class="item-line"></div>
+                                    </h2>
+                                    <p class="item-tip maxwidth-500">ART-Pi 多媒体扩展板不仅能实现音乐播放，还可以玩转 AI 摄像头。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="slider-btn">
+                    <span class="current"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner  END -->
+
+    <!-- 产品介绍 START -->
+    <div class="container containermargin">
+        <div class="row">
+            <div class="col-md-4 productVMlddle">
+                <div> <img src="./images/pro1.png " alt=" "></div>
+            </div>
+            <div class="col-md-8">
+                <div>
+                    <h1>项目介绍：</h1>
+                    <h3> ART-Pi 是 RT-Thread 团队为嵌入式软件工程师、开源创客设计的一款极具扩展功能的 DIY 开源硬件。</h3>
+                    <h3> 致力打造一个开源的软硬件平台。</h3>
+                    <div class="row">
+                        <ul class="col-md-4">
+                            <h2>板载资源:</h2>
+                            <hr>
+                            <li>- STM32H750XBH6 </li>
+                            <li>- On-board ST-LINK/V2.1</li>
+                            <li>- USB OTG with Type-C connector</li>
+                            <li>- SDIO TF Card slot </li>
+                            <li>- SDIO WIFI:AP6212</li>
+                            <li>- HDC UART BuleTooth:AP6212</li>
+                            <li>- RGB888 FPC connector</li>
+                            <li>- 32-Mbytes SDRAM</li>
+                            <li>- 16-Mbytes SPI FLASH</li>
+                            <li>- 8-Mbytes QSPI FLASH</li>
+                            <li>- D1(blue) for 3.3 v power-on</li>
+                            <li>- Two user LEDs:D2 (blue),D2 (red)</li>
+                            <li>- Two ST-LINK LEDs: D4(blue),D4 (red)</li>
+                            <li>- Two push-buttons (user and reset)</li>
+                        </ul>
+                        <ul class="col-md-1">
+                        </ul>
+                        <ul class="col-md-4">
+                            <h2>扩展接口:</h2>
+                            <hr>
+                            <li>- 4路UART(LPUART)</li>
+                            <li>- 3路SPI</li>
+                            <li>- 2路hardware iic</li>
+                            <li>- 1路USB-FS</li>
+                            <li>- 1路ETH</li>
+                            <li>- 1路SAI</li>
+                            <li>- 1路DCMI</li>
+                            <li>- 2路CANFD</li>
+                            <li>- 超过5路ADC (支持查分输入ADC)</li>
+                            <li>- 超过15路PWM(支持高精度定时器HRTIM)</li>
+                        </ul>
+                        <ul class="col-md-1">
+                        </ul>
+                        <ul class="col-md-2">
+                            <h2>驱动支持:</h2>
+                            <hr>
+                            <li>- UART  </li>
+                            <li>- SPI   </li>
+                            <li>- SDMMC </li>
+                            <li>- CAN   </li>
+                            <li>- QSPI  </li>
+                            <li>- ADC   </li>
+                            <li>- PWM   </li>
+                            <li>- DCMI</li>
+                            <li>- SAI</li>
+                            <li>- LTDC</li>
+                            <li>- USB</li>
+                            <li>- ETH</li>
+                            <li>- SDRAM</li>
+                            <li>- HRTIM</li>
+                            <li>- I2C</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 产品介绍 END -->
+
+
+    <!-- 经典案例 START -->
+    <div>
+        <div class="container containermargin">
+            <div class="row">
+                <div class="col-md-4 productVMlddle">
+                    <div> <img src="./images/pro2.png " alt=" "></div>
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <h1>经典案例：</h1>
+                        <h3> ART-Pi 开源 SDK 仓库已收录多个经典创意 DEMO。</h3>
+                        <div class="row">
+                            <ul class="col-md-15">
+                                <h2>
+                                    <li class="active"><a
+                                            href="https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi/tree/master/projects/industry_io_gateway">Modbus-RTU
+                                            转 Modbus-TCP</a></li>
+                                </h2>
+                                <hr>
+                                <li>
+                                    <div> <img src="./images/modbustcp2rtu.gif" alt=" "></div>
+                                </li>
+                            </ul>
+                            <ul class="col-md-0">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containermargin ">
+            </div>   
+            <div class="col-md-4 productVMlddle">
+                <div> <img src="./images/pro3.png " alt=" "></div>
+            </div>
+            <div>
+                <div class="col-md-8">
+                <ul class="col-md-15">
+                    <h2>
+                        <li class="active"><a
+                                href="https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi/tree/master/projects/art_pi_net_player">云音乐播放器</a>
+                        </li>
+                    </h2>
+                    <hr>
+                    <li>
+                        <div> <img src="./images/music.gif" alt=" "></div>
+                    </li>
+                </ul>
+                <ul class="col-md-0">
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="container containermargin">
+        <div class="row">
+            <div class="col-md-4 productVMlddle">
+                <div style="margin-top:-170px;"> <img src="./images/2.jpg " alt=" "></div>
+            </div> 
+            <div class="col-md-8">
+                <div>
+                    <h1>经典教程：</h1>
+                    <h3> ART-Pi 开源硬件平台会源源不断的提供各种教程，期待与大家一同进步。</h3>
+                    <div class="row">
+                        <ul class="col-md-15">
+                            <h2 class="active"><a
+                                href="https://blog.csdn.net/sinat_31039061/category_10389752.html">基于 ART-Pi 的 TOUCHGFX 的连载教程</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interesting Group START -->
+    <div >
+        <div class="containermargin ">
+            <div class="row">
+                <ul class="col-md-6">
+                    <div class="row">
+                        <ul class="col-md-3">
+                            <h1>开源小组</h1>
+                            <!--h4>选择加入他们：</h4-->
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h4>这里聚集了一群热爱学习，热爱开源，热爱 DIY 的小伙伴，扫描二维码，期待志同道合的你加入我们。</h4>
+                            <li>
+                                <img src="./images/qq_group.png"  alt=" ">
+                                <h4> ART-Pi 交流平台，在这里可以获取 ART-Pi 最新 DIY 创意</h4>
+                            </li>   
+                        </ul>
+                    </div>
+                </ul>
+                <ul class="col-md-6">
+                    <!--div class="containermargin"-->
+                        <div>
+                            <h1> 联系我们：</h1>
+                        </div>
+                        <div>
+                            <div>
+                                <h4><a href="mailto:name@email.com">business@rt-thread.com</a></h4>
+                            </div>
+                            <div>
+                                <h4>+86 021-31165890</h4>
+                            </div>
+                            <div>
+                                <h4>上海浦东新区达尔文路88号半岛科技园10号楼5层</h4>
+                            </div>
+                        </div>
+                    <!--/div-->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- Interesting Group END -->
+
+    <script src="./js/jquery.js "></script>
+    <script src="./js/zui.min.js "></script>
+    <script src="./js/banner.js "></script>
 </body>
+
 </html>
