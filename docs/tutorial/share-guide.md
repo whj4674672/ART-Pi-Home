@@ -10,11 +10,11 @@
 
 ### 维护现有 SDK 仓库代码
 
-提交代码的需要符合 《 RT-Thread coding_style_cn.md 》 编码风格，对于提交的代码有说明，对于 BUG 的反馈，建议提交复现说明，尽可能的提供测试用例。
+提交代码的需要符合 《[RT-Thread coding_style_cn.md](https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi/blob/master/documents/coding_style_cn.md)》 编码风格，对于提交的代码有说明，对于 BUG 的反馈，建议提交复现说明，尽可能的提供测试用例。
 
 ### 提交工程代码到 SDK 仓库
 
-提交工程代码规范需符合 《 UM5004-RT-Thread ART-Pi 代码贡献手册.md 》
+提交工程代码规范需符合 《[UM5004-RT-Thread_ART-Pi_代码贡献手册.md](https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi/blob/master/documents/UM5004-RT-Thread%20ART-Pi%20%E4%BB%A3%E7%A0%81%E8%B4%A1%E7%8C%AE%E6%89%8B%E5%86%8C.md)》
 
 ### 代码无法合并到 SDK 仓库
 
@@ -29,7 +29,7 @@
 
 本网页提供扩展板展示界面，需要完善以下内容：
 
-1. 提供 png 格式透明底图片，分辨率不大于 600*600
+1. 提供展示图片，分辨率不大于 900*600
 
 2. 提供简要的扩展板功能说明
 
